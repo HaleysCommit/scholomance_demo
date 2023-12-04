@@ -33,6 +33,8 @@ class Scholomance {
 
     init() {
         this.map = new ScholomanceMap(window.ScholomanceMaps.DemoRoom);
+        this.directionInput = new DirectionInput();
+        this.directionInput.init();
         this.startGameLoop();
 
         // const image = new Image();
