@@ -8,7 +8,6 @@ class GameObject {
             src: config.src || "images/characters/davidmartinez.png",
         });
     }
-
     update() {
 
     }

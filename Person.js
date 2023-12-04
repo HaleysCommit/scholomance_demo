@@ -3,6 +3,8 @@ class Person extends GameObject {
         super(config);
         this.movementProgressRemaining = 16;
 
+        this.direction = "right";
+
         this.directionUpdate = {
             "up": ["y", 1],
             "down": ["y", -1],
@@ -12,14 +14,14 @@ class Person extends GameObject {
     }
 
     update(state) {
-        this.updatePosition
+        this.updatePosition();
     }
 
     updatePosition() {
         if (this.movementProgressRemaining > 0) {
-            cost [property, change] = thisDirectionUpdate[this.direction];
+            const [property, change] = this.directionUpdate[this.direction];
             this[property] += change;
             this.movementProgressRemaining -= 1;
         }
-}
+    }
 }
