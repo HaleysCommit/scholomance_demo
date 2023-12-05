@@ -28,11 +28,11 @@ window.ScholomanceMaps = {
                 y: 140,
                 src: "images/characters/davidmartinez.png"
             }),
-            rebecca: new GameObject({
-                x: 125,
-                y: 159,
-                src: "images/characters/rebecca.png"
-            })
+            // rebecca: new GameObject({
+            //     x: 125,
+            //     y: 159,
+            //     src: "images/characters/rebecca.png"
+            // })
         },
     },
     BedRoom: {
